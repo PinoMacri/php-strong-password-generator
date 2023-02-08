@@ -15,6 +15,7 @@ $password = $_SESSION['pass'];
 <body>
 
 <h3>Password Generata è <?= $password ?></h3>
+<a href="http://localhost/php-strong-password-generator">INDIETRO</a>
 
 </body>
 </html>
