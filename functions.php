@@ -1,62 +1,13 @@
 <?php
-$caratteri = [
-"a" => "a",
-"b" => "b",
-"c" => "c",
-"d" => "d",
-"e" => "e",
-"f" => "f",
-"g" => "g",
-"h" => "h",
-"i" => "i",
-"l" => "l",
-"m" => "m",
-"n" => "n",
-"o" => "o",
-"p" => "p",
-"q" => "q",
-"r" => "r",
-"s" => "s",
-"t" => "t",
-"u" => "u",
-"v" => "v",
-"z" => "z",
-
-"B" => "B",
-"C" => "C",
-"D" => "D",
-"E" => "E",
-"F" => "F",
-"G" => "G",
-"H" => "H",
-"I" => "I",
-"L" => "L",
-"M" => "M",
-"N" => "N",
-"O" => "O",
-"P" => "P",
-"Q" => "Q",
-"R" => "R",
-"S" => "S",
-"T" => "T",
-"U" => "U",
-"V" => "V",
-"Z" => "Z",
-"0" => "0",
-"1" => "1",
-"2" => "2",
-"3" => "3",
-"4" => "4",
-"4" => "5",
-"6" => "6",
-"7" => "7",
-"8" => "8",
-"9" => "9",
-
-"!"=>"!",
-"%"=>"%",
-"?"=>"?",
-"&"=>"&",
-];
-$string_password="La tua Password è: ";
+function randomPassword(){
+    $caratteri = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789-*/";
+    $password_length = $_GET["pass_length"] ?? "";
+    $pass="";
+    for ($i = 0; $i < $password_length; $i++) {
+        $n = rand(0, strlen($caratteri) - 1);
+        $pass .= $caratteri[$n];
+    }
+    return $pass;
+}
+;
 ?>

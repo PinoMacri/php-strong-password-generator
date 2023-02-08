@@ -1,11 +1,9 @@
 <?php
-include __DIR__ . "./functions.php";
-
+session_start();
+$password = $_SESSION['pass'];
 
 ?>
 
-
-<!-- TESTO DEL COMMENTO -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,18 +13,8 @@ include __DIR__ . "./functions.php";
     <title>Document</title>
 </head>
 <body>
-<form action="#" method="GET">
-        <label for="generator-length">Lunghezza password</label>
-        <input type="number" min="5" max="15" id="generator-length" name="lengthPassword">
-        <button>Invia</button>
-    </form>
-<h3>Password Generata</h3>
-<?php 
-echo $string_password;
-$value_random=array_rand($caratteri, $_GET["lengthPassword"]); 
-foreach ($value_random as $value_randoms => $valore) {
-   echo $valore;
-} ;
-?>
+
+<h3>Password Generata è <?= $password ?></h3>
+
 </body>
 </html>
