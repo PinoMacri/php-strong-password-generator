@@ -16,12 +16,15 @@ if (!empty($_SESSION['pass']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
 <form action="#" method="GET">
-        <label for="generator-length">Lunghezza password</label>
-        <input type="number" min="5" max="15" id="generator-length" name="pass_length">
-        <button>Invia</button>
-    </form>
+    <label for="generator-length">Lunghezza password</label>
+    <input type="number" min="5" max="15" id="generator-length" name="pass_length">
+    <button>Invia</button>
+</form>
+
 </body>
 
 </html>
