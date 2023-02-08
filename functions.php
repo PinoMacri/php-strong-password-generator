@@ -2,7 +2,7 @@
 //Random-Password-Function
 function randomPassword(){
     $caratteri = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789-*/";
-    // Input-Value 
+    // Input-Value-Form
     $password_length = $_GET["pass_length"] ?? "";
     // New-Arrey-Randoms 
     $pass="";
