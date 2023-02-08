@@ -1,5 +1,6 @@
 <?php
 include "./functions.php";
+// Send Password Session
 session_start();
 $_SESSION ["pass"] = randomPassword();
 if (!empty($_SESSION['pass']))
